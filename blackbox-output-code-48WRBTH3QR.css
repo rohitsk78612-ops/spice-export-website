@@ -1,0 +1,240 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFFFFF; /* White background */
+}
+
+/* Header Navigation */
+header {
+    background-color: #228B22; /* Green */
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700; /* Yellow on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FFD700; /* Yellow */
+    color: #333;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    background-color: #DC143C; /* Red */
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #B22222; /* Darker red */
+    transform: scale(1.05);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #F5F5F5; /* Light gray for contrast */
+}
+
+.why-choose-us h2 {
+    margin-bottom: 2rem;
+    color: #228B22;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    flex: 1 1 200px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature h3 {
+    color: #DC143C;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Products Section */
+.products {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    flex: 1 1 250px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 1rem 0;
+    color: #228B22;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact-info {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: #DC143C;
+}
+
+/* Footer */
+footer {
+    background-color: #228B22;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .features {
+        flex-direction: column;
+    }
+    
+    .product-grid {
+        flex-direction: column;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
